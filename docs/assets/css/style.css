@@ -2,6 +2,12 @@
 /* --- Typography --- */
 .small { font-size: 14px; }
 
+/* --- Text --- */
+.text-primary { color: #404074 !important; }
+
+/* --- Background --- */
+.bg-primary { background: #404074 !important; }
+
 /* --- Spacing --- */
 .m-min-1 { margin: -0.25rem; }
 .my-min-1 { margin-top: -0.25rem; margin-bottom: -0.25rem; }
@@ -39,6 +45,17 @@
 .ml-min-5 { margin-left: -3rem; }
 .mr-min-5 { margin-right: -3rem; }
 
+/* - Pixel Spacing - */
+/* m */
+.mb-60px { margin-bottom: 60px; }
+.mb-30px { margin-bottom: 30px; }
+
+/* p */
+.p-30px { padding: 30px; }
+.py-30px { padding-top: 30px; padding-bottom: 30px; }
+.py-60px { padding-top: 60px; padding-bottom: 60px; }
+.py-90px { padding-top: 90px; padding-bottom: 90px; }
+
 /* Rounding */
 .rounded-1 { border-radius: 1rem !important; }
 .rounded-top-1 { border-top-left-radius: 1rem !important; border-top-right-radius: 1rem !important; }
@@ -53,21 +70,30 @@
 /* --- Button --- */
 .btn {
 	font-size: 14px;
-	font-weight: bold;
-	padding: 0.5rem 1.5rem;
+	/*font-weight: bold;*/
+	padding: 0.75rem 1.5rem;
 
+	border: none;
 	border-radius: 1000px;
 }
 
+.btn-primary { background: #404074 !important; }
 .btn-light { background: #fff; }
+
+.btn-outline-primary { color: #404074; }
 
 /* --- Square --- */
 .square {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 70px;
+}
+
+.square-sm {
+	width: 40px;
+	height: 40px;
 }
 
 /* ------ Navbar ------ */
@@ -75,10 +101,34 @@
 #navbar .navbar-nav .nav-item .nav-link {
 	color: #212529;
 	font-size: 14px;
-	font-weight: bold;
+	/*font-weight: bold;*/
+	padding: 0.75rem 1rem;
+}
+
+#navbar .navbar-nav .nav-item .nav-link:hover {
+	background: rgba(0,0,0,0.033);
 }
 
 /* ------ Hero ------ */
 #hero {
 
+}
+
+/* ------ Footer ------ */
+#footer .footer-links .nav .nav-item .nav-link {
+	color: #fff;
+	padding: 0.5rem 0;
+}
+
+#footer .footer-social-media .nav .nav-item .nav-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #404074;
+	font-weight: bold;
+	background: #fff;
+	width: 32px;
+	height: 32px;
+	margin: 1rem;
+	border-radius: 1000px;
 }
