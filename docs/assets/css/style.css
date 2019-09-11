@@ -1,5 +1,10 @@
 /* ------ Custom and Redefined Style ------ */
+/* --- Position --- */
+.top-0 { top: 0; }
+.right-0 { right: 0; }
+
 /* --- Typography --- */
+.h1 { font-size: 48px; }
 .small { font-size: 14px; }
 
 /* --- Text --- */
@@ -7,6 +12,7 @@
 
 /* --- Background --- */
 .bg-primary { background: #404074 !important; }
+.bg-white-transparent { background: rgba(255,255,255,0.95); }
 
 /* --- Spacing --- */
 .m-min-1 { margin: -0.25rem; }
@@ -57,6 +63,8 @@
 .py-90px { padding-top: 90px; padding-bottom: 90px; }
 
 /* Rounding */
+.rounded-45px { border-radius: 45px; }
+
 .rounded-1 { border-radius: 1rem !important; }
 .rounded-top-1 { border-top-left-radius: 1rem !important; border-top-right-radius: 1rem !important; }
 .rounded-bottom-1 { border-bottom-left-radius: 1rem !important; border-bottom-right-radius: 1rem !important; }
@@ -66,6 +74,10 @@
 .rounded-3 { border-radius: 0.25rem !important; }
 .rounded-top-3 { border-top-left-radius: 0.25rem !important; border-top-right-radius: 0.25rem !important; }
 .rounded-bottom-3 { border-bottom-left-radius: 0.25rem !important; border-bottom-right-radius: 0.25rem !important; }
+.rounded-circle { border-radius: 1000px !important; }
+
+/* --- Shadow --- */
+.shadow { box-shadow: 0 1px 60px rgba(0,0,0,0.075) !important; }
 
 /* --- Button --- */
 .btn {
@@ -91,6 +103,11 @@
 	height: 70px;
 }
 
+.square-lg {
+	width: 185px;
+	height: 185px;
+}
+
 .square-sm {
 	width: 40px;
 	height: 40px;
@@ -111,7 +128,10 @@
 
 /* ------ Hero ------ */
 #hero {
-
+	background-image: url('../images/hero-bg.png'); 
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: right;
 }
 
 /* ------ Footer ------ */
