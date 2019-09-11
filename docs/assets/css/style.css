@@ -93,6 +93,7 @@
 .btn-light { background: #fff; }
 
 .btn-outline-primary { color: #404074; }
+.btn-outline-primary:hover { background: #404074; }
 
 /* --- Square --- */
 .square {
@@ -103,15 +104,11 @@
 	height: 70px;
 }
 
-.square-lg {
-	width: 185px;
-	height: 185px;
-}
+.square-lg { width: 185px; height: 185px; }
+.square-sm { width: 40px; height: 40px; }
 
-.square-sm {
-	width: 40px;
-	height: 40px;
-}
+/* ------ Fit ------ */
+.fit-width { width: 100%; height: auto; }
 
 /* ------ Navbar ------ */
 #navbar { z-index: 1; }
@@ -123,7 +120,7 @@
 }
 
 #navbar .navbar-nav .nav-item .nav-link:hover {
-	background: rgba(0,0,0,0.033);
+	color: #404074;
 }
 
 /* ------ Hero ------ */
